@@ -93,7 +93,7 @@
 @section{@(racket eval-sequence) and @(racket define)}
 
 @para{
- Definitions are not ``expressions'' in our language: We do not evluate a definition in order to get some value. It only extends the environment.
+ Definitions are not ``expressions'' in our language: We do not evaluate a definition in order to get some value. It only extends the environment.
  That kind of means that evaluating a program that is only a definition is not an incredibly meaningful thing to do.
  Like, we, uh, we want results.
 }
@@ -109,7 +109,7 @@
     (match exps
       [(list x)  #,(emph "your code here")]
 
-      [(list ('define name exp) rest ...)  #,(emph "your code here")]
+      [(list (list 'define name exp) rest ...)  #,(emph "your code here")]
 
       [(list x rest ...)  #,(emph "your code here")])))
 
