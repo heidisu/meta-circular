@@ -2,9 +2,9 @@
 
 (define (lookup env s)
   (match env    
-    [(list (cons name x) rest ...)
+    [(list (cons name val) rest ...)
      (if (equal? name s)
-         x
+         val
          (lookup rest s))]
     
     [(list)
