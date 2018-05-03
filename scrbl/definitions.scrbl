@@ -106,12 +106,12 @@
 
 @(racketblock
   (define (eval-sequence env exps)
-    (match exps
-      [(list x)  #,(emph "your code here")]
+    (match terms
+      [(list exp)  #,(emph "your code here")]
 
       [(list (list 'define name exp) rest ...)  #,(emph "your code here")]
 
-      [(list x rest ...)  #,(emph "your code here")])))
+      [(list trm rest ...)  #,(emph "your code here")])))
 
 @para{
  In the @emph{first} match-clause:
@@ -123,13 +123,13 @@
 
 @para{
  In the @emph{last} match-clause:
- Since the middle clause did not match, @(racket x) is not a @(racket define)-form.
+ Since the middle clause did not match, @(racket trm) is not a @(racket define)-form.
  We will evaluate it with @(racket eval-exp), throw away its result, and use @(racket eval-sequence) on the  @(racket rest) of the terms.
  (Yea so throwing away the results seems possibly wasteful. Maybe side effects though?)
 }
 
 @para{
- In the @emph{last} match-clause:
+ In the @emph{middle} match-clause:
  A @(racket define)-form. This is more trickier.
  First we should evaluate the @(racket exp)ression part of the defintion,
  and create a new environment with @(racket extend-environment). 
