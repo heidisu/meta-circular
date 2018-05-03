@@ -56,15 +56,25 @@
 @section{Outline}
 
 @para{
- What we will do in this workshop is to start with a simple calculator evaluator, which allows us to calculate the value of expressions with the four basic operators +, -, * and /.
- And then gradually, through several steps, extend it until we have our notdeterministic evaluator @(racket amb).
+ In this workshop we will start with a simple calculator evaluator, which allows us to calculate the value of expressions with the four basic operators +, -, * and /.
+ And then gradually, through several steps, extend it until we have our nondeterministic evaluator @(racket amb).
 }
 
 @para{
- We will go through the steps of implementing
- @secref{Lookup_in_the_environment}, @secref{Definitions}, @secref{Functions}, @secref{Booleans}, @secref{Continuation-passing_style} and @secref{Ambiguousness},
- before we move @secref{Towards_zebras}, our ultimate goal.
- It is possible to skip familiar steps: Every step has a corresponding Racket file that can be used as a starting point.
+ To begin with we will expand the calculator into a ``normal,'' but minimal and lispy, functional programming language.
+ Mostly dealing with variables and functions:
+ @secref{Lookup_in_the_environment}, @secref{Definitions}, @secref{Functions}.
+}
+
+@para{
+ Starting with @secref{Continuation-passing_style}, we add the things we need for @secref{Ambiguousness}.
+ @secref{Booleans} can be added kind of whenever,
+ only we need them before moving @secref{Towards_zebras}, our ultimate goal.
+}
+
+@para{
+ Not everything is new to everyone. It is possible to skip to where things get interesting.
+ Every step has a corresponding Racket file that can be used as a starting point.
 }
 
 @section{Goals for the workshop}

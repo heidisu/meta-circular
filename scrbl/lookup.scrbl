@@ -46,14 +46,24 @@
                    (cons 'b 2))
              'c))))
 
-
-@section{@(racket primitives)}
+@section{An environment}
 
 @para{
- A name (a symbol) together with a value (e.g. the number 2, or a function) is a binding.
- We will put bindings in a list.
- When the evaluator encounters a name it will look it up in this list so that it can return the value bound by that name.
+ Idea is: Whenever we evaluate an expression, we will have an environment with bound variables and their values,
+ and when we evaluate a variable reference, we will look up its value in the environment.
 }
+
+@para{An environment can look like:}
+
+@(racketblock '((a . 5) (b . 4) (c . 3) (a . 7)))
+
+@para{
+ In this environment, looking up @(racket 'b) should give us @(racket 4) and @(racket 'c) should give us @(racket 3).
+ @(racket 'a) should give us @(racket 5). New bindings are added to the beginning of the list, and newer bindings shadow older ones.
+ We can't reach the @(racket 'a) that is bound to @(racket 7).
+}
+
+@section{@(racket primitives)}
 
 @para{
  We will start off by making a list called @(racket primitives) containing our four primitive operators,
