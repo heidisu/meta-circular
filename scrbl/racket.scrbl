@@ -22,7 +22,7 @@
  Some things:
 }
 @(itemlist
-  @item{@tt{Ctrl+L} inserts a λ-character}
+  @item{@tt{Ctrl+\} inserts a λ-character}
   @item{@tt{F1} searches for the name of the identifier your cursor is on in the Racket documentation.}
   @item{@tt{F2} makes a blue box appear! (or disappear)})
 

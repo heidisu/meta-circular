@@ -79,7 +79,7 @@
     #,(emph "your code here")))
 
 @para{
- The function should return a new list where the new pairs of name and value are appended to @(racket env).
+ The function should return a new list containing new pairs of names and values and all the pairs from @(racket env).
  The Racket function @(racket append) will be useful.
  Also useful: Racket's @(racket map)-function can take multiple lists of same length as arguments. Like:
 }
