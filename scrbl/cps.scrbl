@@ -19,7 +19,7 @@
   (define (add2 x)
     (+ x 2)))
 @para{
- If we wanna appply it to the number three and display the result, then we can apply it to @(racket 3) and @(racket display):
+ If we wanna apply it to the number three and display the result, then we can apply it to @(racket 3) and @(racket display):
 }
 @(racketblock
   (display (add2 3)))
@@ -46,7 +46,7 @@
 @(racketblock
   (add2 3 display))
 @para{
- If we don't exactly have exactly the exact functions we want at hand, we can make them with lambdas.
+ If we don't exactly have the exact functions we want at hand, we can make them with lambdas.
 }
 
 @(racketblock

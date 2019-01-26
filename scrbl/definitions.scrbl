@@ -106,7 +106,7 @@
 
 @(racketblock
   (define (eval-sequence env exps)
-    (match terms
+    (match exps
       [(list exp)  #,(emph "your code here")]
 
       [(list (list 'define name exp) rest ...)  #,(emph "your code here")]

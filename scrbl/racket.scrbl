@@ -8,7 +8,7 @@
 @para{
  We are going to implement an evaluator for a language.
  We will write the evaluator in Racket. Racket is pretty lispy and schemey.
- The language we will make evaluator for will also be pretty lispy and schemey.
+ The language we will make the evaluator for will also be pretty lispy and schemey.
  On the whole: Lispy and schemey.
 }
 

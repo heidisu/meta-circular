@@ -182,6 +182,7 @@
  Should be pretty similar to what we used to do when we matched e.g. @(racket '+),
  only we don't use a hardcoded function (like @(racket +)),
  and we need to pass the @(racket env)ironment along whenever we call @(racket eval-exp).
+ It can be useful with a lambda function.
 }
 
 @section[#:tag "lookup-done"]{Done?}

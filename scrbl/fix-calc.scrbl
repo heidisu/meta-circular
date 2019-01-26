@@ -88,7 +88,7 @@
 
 @para{
  The first @hyperlink["https://docs.racket-lang.org/reference/define.html"]{@(racket define)}-form defines a function called @(racket eval-exp) that takes one argument, @(racket exp).
- For now, the @(racket eval-exp)-function is the most important piece of code. It is for evaluating and expression and returning the result.
+ For now, the @(racket eval-exp)-function is the most important piece of code. It is for evaluating an expression and returning the result.
 }
 
 @subsection{@(racket read) and quotes}

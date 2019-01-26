@@ -20,7 +20,7 @@
 }
 
 @para{
- When making a new language we can implemented an evaluator in more or less any kind of language,
+ When making a new language we can implement an evaluator in more or less any kind of language,
  but we will typically have to spend quite some time working on lexing and parsing before we have something meaningful or fun.
  We will use a subset of Racket's syntax for our language, and we will implement the evaluator in Racket.
  Reusing bits of our ``host language'' like that is what we do when we're making @emph{meta-circular evaluator}.
