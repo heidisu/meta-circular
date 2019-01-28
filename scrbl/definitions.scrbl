@@ -13,7 +13,7 @@
 }
 
 @para{
- We will use ``definitions'' to bind a names to a values, so that they can be referred to by their names.
+ We will use a ``definition'' to bind a name to a value, so that values can be referred to by their names.
  When we encounter a definition we will extend the environment with a new binding.
 }
 
