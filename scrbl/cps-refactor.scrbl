@@ -34,7 +34,7 @@
 @para{
  @(racket eval-exp) isn't too bad. In most of the @(racket match)-clauses we return a value pretty directly.
  In those cases we will pass the values along to @(racket continue) instead.
- In the case where we call @(racket eval-application), we will pass our @(racket continue) along to @(racket eval-application) and put it in front of the other arguments...
+ In the case where we call @(racket eval-application), we will pass our @(racket continue) along to @(racket eval-application) and put it in after @(racket env) parameter. The same goes for @(racket eval-sequence).
 }
 
 @subsection{@(racket (eval-sequence env continue exps))}
