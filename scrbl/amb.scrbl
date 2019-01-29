@@ -22,6 +22,8 @@
 
 @section[#:tag "amb-tests"]{Some tests}
 
+@intro-test-para
+
 @(racketblock
   (check-equal?
    (eval-require primitives

@@ -19,6 +19,8 @@
 
 @section[#:tag "def-tests"]{Some tests}
 
+@intro-test-para
+
 @(racketblock
   (check-equal?
    (extend-environment (list (cons 'd 2) (cons 'e 1))

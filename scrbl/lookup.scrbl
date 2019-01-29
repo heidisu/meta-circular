@@ -16,6 +16,8 @@
 
 @section[#:tag "lookup-tests"]{Some tests}
 
+@intro-test-para
+
 @(racketblock
   (check-equal?
    (lookup (list (cons 'a 1)

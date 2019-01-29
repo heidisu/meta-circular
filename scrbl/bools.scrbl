@@ -12,6 +12,8 @@
 
 @section[#:tag "bool-tests"]{Some tests}
 
+@intro-test-para
+
 @(racketblock
   (check-equal?
    (evaluate '(if #f 3 5))

@@ -3,7 +3,7 @@
 @title{Continuation-passing style}
 
 @para{
- (Not really working with in this part. Can play with stuff in the Racket REPL.)
+ (Not really working with the Racket file in this part. Can play with stuff in the Racket REPL.)
 }
 
 @para{

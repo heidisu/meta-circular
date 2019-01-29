@@ -1,6 +1,7 @@
 #lang scribble/manual
 
 @(provide intro-para
+          intro-test-para
           outro-test-para
           outro-para)
 
@@ -19,3 +20,8 @@
  Next is @secref[section].
  We can keep using the Racket-file we're working with, or skip to @tt[filename].
 })
+
+@(define intro-test-para
+   @para{
+ You might want to copy them into the test section at the bottom of your Racket file.})
+          

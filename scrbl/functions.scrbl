@@ -18,6 +18,8 @@
 
 @section[#:tag "fun-tests"]{Some tests}
 
+@intro-test-para
+
 @(racketblock
   (check-equal?
    (evaluate '((λ () (+ 2 3))))
