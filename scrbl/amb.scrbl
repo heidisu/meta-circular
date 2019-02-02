@@ -49,6 +49,16 @@
    6))
 
 @(racketblock
+  (check-exn
+   exn:fail?
+   (λ()
+     (evaluate
+      '(begin
+         (define a (amb 1 2 3))
+         (require (> a 5))
+         a)))))
+
+@(racketblock
   (check-equal?
    (evaluate
     '(begin

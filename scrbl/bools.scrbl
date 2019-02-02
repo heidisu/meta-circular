@@ -16,28 +16,28 @@
 
 @(racketblock
   (check-equal?
-   (evaluate '(if #f 3 5))
+   (evaluate '(if #f (+ 1 2) (+ 2 3)))
    5))
 
 @(racketblock
   (check-equal?
-   (evaluate '(if (< 8 4) 1 0))
-   0))
+   (evaluate '(if (> 8 4) (+ 1 2) 0))
+   3))
 
 @(racketblock
 
   (check-equal?
    (evaluate '((λ (a b)
-                 (if (> a (+ b b)) 3 6))
+                 (if (> a (+ b b)) (- a b) (+ a b)))
                9 1))
-   3))
+   8))
 
 @(racketblock  
   (check-equal?
    (evaluate '((λ (a b)
-                 (if (> a (+ b b)) 3 6))
+                 (if (> a (+ b b)) (- a b) (+ a b)))
                9 5))
-   6))
+   14))
 
 @section{Literals}
 
