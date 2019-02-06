@@ -4,7 +4,7 @@
 It is a good book, you should read it!</p><h4>1.1<tt>&nbsp;</tt><a name="(part._.Programming_languages_and_evaluators)"></a>Programming languages and evaluators</h4><p>A programming language is a language with a certain syntax and given rules,
 that makes you able to write programs that hopefully do what you expect them do do.</p><p>There are different strategies for how an implementation of a programming language executes programs. One approach is to make an evaluator.
 An <span style="font-style: italic">evaluator</span> (or interpreter) for a language is a program that rather directly executes expressions written in that language.
-In order to execute the program, the evaluator needs to parse the expressions to something meaningful for the evaluator, and then evalute the expressions.</p><p>When making a new language we can implemented an evaluator in more or less any kind of language,
+In order to execute the program, the evaluator needs to parse the expressions to something meaningful for the evaluator, and then evalute the expressions.</p><p>When making a new language we can implement an evaluator in more or less any kind of language,
 but we will typically have to spend quite some time working on lexing and parsing before we have something meaningful or fun.
 We will use a subset of Racket&rsquo;s syntax for our language, and we will implement the evaluator in Racket.
 Reusing bits of our &ldquo;host language&rdquo; like that is what we do when we&rsquo;re making <span style="font-style: italic">meta-circular evaluator</span>.</p><p><div class="SIntrapara">But wait, why would we write (something very similar to) Racket in Racket when we already have a Racket?
