@@ -103,8 +103,8 @@
  But it would be neat to add support for recursive functions to our language.
 }
 @para{
- One way to go is to combine it with adding support for more rackety function definitions,
- the ones that go.
+ One thing we can do is to combine it with adding support for more rackety function definitions,
+ the ones that go @(racket (define (function-name arguments ...) body ...)).
  We can add a clause to the @(racket match) in @(racket eval-sequence):
 }
 @(racketblock
