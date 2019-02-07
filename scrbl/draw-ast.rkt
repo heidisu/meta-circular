@@ -1,8 +1,7 @@
 #lang racket
 (provide draw-ast)
 
-(require "tree-structs.rkt"
-         "draw.rkt"
+(require "draw.rkt"
          2htdp/image)
 
 (struct tree (thing children) #:transparent)
@@ -76,4 +75,4 @@
 (define draw-ast (compose draw (tree-map (λ (s) (draw-text (~a s)))) s-exp->tree))
   
 (module+ main
-  (draw-ast '(+ 1 (+ 1 2))))
+  (draw-ast '(+ 1 (* 1 2))))
