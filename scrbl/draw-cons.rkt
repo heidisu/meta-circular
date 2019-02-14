@@ -15,7 +15,7 @@
 (define reg-w/2 (/ reg-w 2))
 (define reg-h (image-height reg-img))
 (define reg-h/2 (/ reg-h 2))
-(define padding 10)
+(define padding 15)
 
 (define cons-img (beside reg-img reg-img))
 
@@ -50,3 +50,6 @@
   (img i (/ (image-width i) 2) 0))
 
 (define draw-cons (compose img-img draw-cons-halp))
+
+(module+ main
+  (draw-cons '(1 2 (a . b) 3 4)))
