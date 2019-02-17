@@ -24,7 +24,9 @@
 @(itemlist
   @item{@tt{Ctrl+\} inserts a λ-character}
   @item{@tt{F1} searches for the name of the identifier your cursor is on in the Racket documentation.}
-  @item{@tt{F2} makes a blue box appear! (or disappear)})
+  @item{@tt{F2} makes a blue box appear! (or disappear)}
+  @item{@tt{Ctrl+i} indents everything appropriately}
+  @item{@tt{Ctrl+↑}/{Ctrl+↓} for scrolling through previously used forms in the REPL})
 
 @section{@(racket (function argument ...))}
 
@@ -64,7 +66,7 @@
 @section{A very subsetty subset of Racket btw}
 
 @para{
- We will try to write code in a style that isn't very far away from like, modern Racket, but without introducing like a ton of Racket.
+ We will try to write code in a style that isn't very far away from like, modern Racket, but without introducing an actual ton of Racket.
  We get most of the work done by working with lists/pairs and simpler data types like symbols and numbers, and then pattern matching lots.
 }
 @para{
@@ -79,6 +81,6 @@
   @item{Or something else...})
 
 @para{
- Anyway it's totally okay to use parts of Racket that don't mention in the workshop materials.
+ Anyway it's totally okay to use parts of Racket that we don't mention in the workshop materials.
  We don't have to, but like, we can, it's fine.
 }
