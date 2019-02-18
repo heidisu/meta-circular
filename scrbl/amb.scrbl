@@ -113,16 +113,16 @@
  In @(racket eval-exp) we will add a clause:
 }
 @(racketblock
-  [(list 'require x)
+  [(list 'require exp)
    (eval-require env
                  continue
                  fail
-                 x)])
+                 exp)])
 @para{
  And make the function @(racket (eval-require env continue fail exp)).
  In @(racket eval-require) we will evaluate @(racket exp).}
 
-@para{The continuation we pass along to @(racket eval-exp) should carry on with @(racket continue) if @(racket x) evaluated to true,
+@para{The continuation we pass along to @(racket eval-exp) should carry on with @(racket continue) if @(racket exp) evaluated to true,
  or use @(racket fail) if it evaluated to false.
  The @(racket fail)-continuation should not take any arguments.
 }

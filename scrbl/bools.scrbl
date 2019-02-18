@@ -53,9 +53,9 @@
  And we want some kind of if-then-else.
  In @(racket eval-exp) we add a clause:
 }
-@(racketblock [(list 'if x then else) #,(emph "your code here")])
+@(racketblock [(list 'if exp then else) #,(emph "your code here")])
 @para{
- If it matches, we will evaluate the @(racket x)-expression,
+ If it matches, we will evaluate the @(racket exp)-expression,
  then choose @(racket then)-expression or @(racket else)-expression depending on the value we got,
  and then evaluate the expression we chose.
 }

@@ -79,10 +79,10 @@
     [(? number?) (continue exp)]
     [(? boolean?) (continue exp)]
     
-    [(list 'if x then else)
+    [(list 'if exp then else)
      (eval-exp env
-               (λ (x-val) (eval-exp env continue (if x-val then else)))
-               x)]
+               (λ (value) (eval-exp env continue (if value then else)))
+               exp)]
 
     [(list 'begin terms ...) (eval-sequence env continue terms)]
     

@@ -61,8 +61,8 @@
 
 @para{
  In Racket, e.g. @(racket 'a) is translated to @tt{(quote a)} by the reader.
- If we want to support quotes in the language we're making, we can match on @(racket (list 'quote x))
- and @(racket continue) with the quoted syntax, @(racket x).
+ If we want to support quotes in the language we're making, we can match on @(racket (list 'quote exp))
+ and @(racket continue) with the quoted syntax, @(racket exp).
 }
 
 @para{

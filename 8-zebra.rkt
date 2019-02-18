@@ -132,17 +132,17 @@
     [(? boolean?) (continue fail exp)]
     [(? string?) (continue fail exp)]
     
-    [(list 'if x then else)
+    [(list 'if exp then else)
      (eval-exp env
-               (λ (fail2 x-val) (eval-exp env continue fail2 (if x-val then else)))
+               (λ (fail2 value) (eval-exp env continue fail2 (if value then else)))
                fail
-               x)]
+               exp)]
 
-    [(list 'require x)
+    [(list 'require exp)
      (eval-require env
                    continue
                    fail
-                   x)]
+                   exp)]
 
     [(list 'amb exps ...)
      (eval-amb env
@@ -150,7 +150,7 @@
                fail
                exps)]
 
-    [(list 'quote x) (continue fail x)]
+    [(list 'quote exp) (continue fail exp)]
 
     [(list 'begin terms ...) (eval-sequence env continue fail terms)]
     
